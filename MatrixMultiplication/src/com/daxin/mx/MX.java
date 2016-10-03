@@ -70,7 +70,7 @@ public class MX {
 
 		}
 
-		System.out.println("===================res=====================");
+		System.out.println("===================打印记录的次数数组res:=====================");
 		for (int i = 1; i < mx.length; i++) {
 			for (int j = 1; j < mx.length; j++) {
 				if (2147483647 == res[i][j]) {
@@ -83,7 +83,7 @@ public class MX {
 			System.out.println();
 		}
 
-		System.out.println("===================loc=====================");
+		System.out.println("===================打印记录的分隔位置的数组loc:=====================");
 		for (int i = 1; i < mx.length; i++) {
 			for (int j = 1; j < mx.length; j++) {
 				if (2147483647 == res[i][j]) {
@@ -98,7 +98,7 @@ public class MX {
 
 		System.out.println("根据loc矩阵寻找最优解：");
 		System.out
-				.println("思路：n个矩阵的求解问题，首先把n个矩阵看成一个子问题，找出最优秀的分割位置，为k。此时k将n个矩阵的问题一份为2了。\r\n再然后递归即可");
+				.println("思路：n个矩阵的求解问题，首先把n个矩阵看成一个子问题，找出最优秀的分割位置，为k。\r\n此时k将n个矩阵的问题一份为2了，再然后将两个子问题递归即可");
 //		loc
 		System.out.println();
 		System.out.println();
@@ -108,9 +108,8 @@ public class MX {
 		}
 		
 		
-		System.out.println("矩阵乘法顺序为：");
+		System.out.println("矩阵乘法顺序为："+getOrder(loc, 1, 5));
 		
-		System.out.println(getOrder(loc, 1, 5));
 		
 		
 		
